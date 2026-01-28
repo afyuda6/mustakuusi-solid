@@ -19,7 +19,7 @@ export const Privacy: Component<PrivacyProps> = (props) => {
                 <button class={`${styles.translateBtn} ${!isIndonesian() ? styles.active : ""}`}
                         onClick={() => setLanguage('en')}>EN
                 </button>
-                <span> | </span>
+                <span class={styles.separator}>&nbsp;|&nbsp;</span>
                 <button class={`${styles.translateBtn} ${isIndonesian() ? styles.active : ""}`}
                         onClick={() => setLanguage('id')}>ID
                 </button>
