@@ -1,6 +1,7 @@
 import {type Component, onMount} from "solid-js";
 import {Router, Route} from "@solidjs/router";
 import {Marquee} from "./components/Marquee/Marquee";
+import {Footer} from "./components/Footer/Footer";
 import {HomePage} from "./pages/HomePage";
 import {GamePage} from "./pages/GamePage";
 import {CharacterPage} from "./pages/CharacterPage";
@@ -13,7 +14,7 @@ export const App: Component = () => {
         if (window.location.hash) {
             const id = window.location.hash.slice(1);
             const el = document.getElementById(id);
-            if (el) el.scrollIntoView({ behavior: "smooth" });
+            if (el) el.scrollIntoView({behavior: "smooth"});
         }
     });
 
@@ -27,6 +28,7 @@ export const App: Component = () => {
                 <Route path="/privacy-policy/:id" component={PrivacyPolicyPage}/>
                 <Route path="*" component={EmptyPage}/>
             </Router>
+            <Footer/>
         </div>
     );
 };
