@@ -83,7 +83,7 @@ export const GameCard: Component<GameCardProps> = (props) => {
                             src={getImageUrl("googlebadge.png")}
                             alt="Unduh di Google Play"
                             class={styles.badge}
-                        /></a>) : (<h2>{countdown() || "Segera hadir"}</h2>)}
+                        /></a>) : (<h2 class={styles.badge}>{countdown() || "Segera hadir"}</h2>)}
                     {props.game.playLink && (
                         <a href={props.game.playLink} target="_blank" rel="noopener"><img
                             src={getImageUrl("itchbadge.png")}
