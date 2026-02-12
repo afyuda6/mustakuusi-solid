@@ -72,7 +72,6 @@ export const GameCard: Component<GameCardProps> = (props) => {
                     >{props.game.title}</A>
                 </h3>
                 <time class={styles.date} dateTime={props.game.date}>Dirilis: {props.game.date}</time>
-                <p class={styles.description}>{props.game.description}</p>
                 <ul class={styles.categories}>
                     <For each={props.game.categories}>
                         {(category) => <li class={styles.category}>{category}</li>}
