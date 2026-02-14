@@ -3,7 +3,6 @@ import {useParams} from "@solidjs/router";
 import {Navbar} from "../components/Navbar/Navbar";
 import {Hero} from "../components/Hero/Hero";
 import {About} from "../components/About/About";
-import {Games} from "../components/Games/Games";
 import {Characters} from "../components/Characters/Characters";
 import {Screenshots} from "../components/Screenshots/Screenshots";
 import {Contact} from "../components/Contact/Contact";
@@ -69,7 +68,6 @@ export const GamePage: Component = () => {
                 screenshots={game.screenshots}
                 title={game.title}
             />
-            <Games gameSection="Gim Lain" games={games}/>
             <Contact/>
         </div>
     );

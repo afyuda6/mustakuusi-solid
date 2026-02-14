@@ -3,7 +3,6 @@ import {useParams} from "@solidjs/router";
 import {Navbar} from "../components/Navbar/Navbar";
 import {Hero} from "../components/Hero/Hero";
 import {Games} from "../components/Games/Games";
-import {Characters} from "../components/Characters/Characters";
 import {Contact} from "../components/Contact/Contact";
 import characters from "../../../public/data/characters.json";
 import games from "../../../public/data/games.json";
@@ -57,7 +56,6 @@ export const CharacterPage: Component = () => {
                 description={character.description}
             />
             <Games gameSection={`${character.name} di Gim`} games={filteredGames}/>
-            <Characters characterSection="Karakter Lain" characters={characters}/>
             <Contact/>
         </div>
     );
